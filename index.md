@@ -16,7 +16,7 @@ layout: home
 
 {%- for asset in release.assets %}
 
-#### {{ asset.updated_at | date: site.minima.date_format }} {{ asset.name }} [下载地址]({{ asset.browser_download_url }}) [备用下载地址]({{ asset.browser_download_url | replace: "https://github.com/", "http://github.lomo.cc/"}})
+#### {{ asset.updated_at | date: site.minima.date_format }} [{{ asset.name }}]({{ asset.browser_download_url }})
 
 {%- endfor %}
 {% endfor %}
