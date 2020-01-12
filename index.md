@@ -15,7 +15,6 @@ layout: home
 ### {{release.tag_name | capitalize}}
 
 {%- for asset in release.assets %}
-
 #### {{ asset.updated_at | date: site.minima.date_format }} [{{ asset.name }}]({{ asset.browser_download_url }})
 
 {%- endfor %}
